@@ -10,3 +10,7 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 pip3 freeze > requirements.txt 
 Mostra as dependências intaladas na venv
+
+Algumas intalações do Windows só aceitam python run.py
+
+e não o python3 run.py
