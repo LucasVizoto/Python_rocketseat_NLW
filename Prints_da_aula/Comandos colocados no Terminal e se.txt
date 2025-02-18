@@ -1,0 +1,12 @@
+Comandos colocados no Terminal e seus Significados
+
+.\venv\Scripts\activate
+inicia a sua venv criada
+
+ATENÇÃO - O PowerShell pode travar esse passo, então siga o passo a passo
+Get-ExecutionPolicy (caso retorn Restricted, ele realmente tá barrando)
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+
+pip3 freeze > requirements.txt 
+Mostra as dependências intaladas na venv

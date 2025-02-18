@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/*.pyc": {"when": "$(basename).py"},
+        "**/__pycache__": true,
+        "**/*.pyteste_cache": true
+    }
+}
+
+// Aqui eu basicamente defini para não ficar aparecendo
+// o pycache em toda pasta que eu rodar o código
