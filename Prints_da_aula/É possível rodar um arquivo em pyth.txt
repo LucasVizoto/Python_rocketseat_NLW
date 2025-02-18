@@ -1,0 +1,8 @@
+É possível rodar um arquivo em python colocando python3 archive_name 
+
+
+criando um banco de dados em sqllite
+
+python3 (no terminal)
+import sqlite3
+sqlite.connect('schema.db')
