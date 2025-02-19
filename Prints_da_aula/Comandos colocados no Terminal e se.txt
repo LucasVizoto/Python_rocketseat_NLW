@@ -1,3 +1,6 @@
+sistema de cadastro de eventos, gerenciar inscritos em nossos eventos, além de gerar link para chamarem outras pessoas
+
+
 Comandos colocados no Terminal e seus Significados
 
 .\venv\Scripts\activate
@@ -21,3 +24,4 @@ repositories é onde colocamos nossas ações em banco
 
 pytest -s -v src/model/repositories/eventos_repository_test.py 
 rodar o test unitário 
+
