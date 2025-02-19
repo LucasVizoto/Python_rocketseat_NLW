@@ -22,3 +22,10 @@ def test_select_events():
         print(event.name)
 
 # são teste de integração pois estamos testando a conexão com o banco
+
+@pytest.mark.skip("Delete by id in DB") #estou pulando o teste e dizendo o pq 
+def test_delete_event():
+      event_id = 2
+      event_repo = EventosRepository()
+
+      event_repo.delete_event(event_id)

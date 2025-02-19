@@ -14,3 +14,10 @@ Mostra as dependências intaladas na venv
 Algumas intalações do Windows só aceitam python run.py
 
 e não o python3 run.py
+
+pasta model são sempre todos os elementos de comunicação com o banco
+
+repositories é onde colocamos nossas ações em banco
+
+pytest -s -v src/model/repositories/eventos_repository_test.py 
+rodar o test unitário 

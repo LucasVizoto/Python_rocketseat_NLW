@@ -22,3 +22,9 @@ class EventosRepository:
                 .one_or_none() #retorne um ou nenhum
             }
             return data#[0] if data else None #retorna o primeiro elemento do resultado ou None se não encontrar
+    
+    def delete_event(self, event_id: int) -> None:
+        with DBConnectionHandler() as db:
+            event_to_delete = db.session.query(Eventos).filter_by(id=event_id).first()
+            db.session.delete(event_to_delete)
+            db.session.commit()
