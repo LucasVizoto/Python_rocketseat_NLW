@@ -21,7 +21,7 @@ class SubscribersRepository(SubscribersRepositoryInterface):
                 raise exception
     def select_subscriber(self, email: str, event_id: int) -> Inscritos:
         with DBConnectionHandler() as db:
-            data ={    
+            data = ( 
                 db.session
                 .query(Inscritos)
                 .filter(
@@ -29,6 +29,6 @@ class SubscribersRepository(SubscribersRepositoryInterface):
                     Inscritos.evento_id == event_id
                     )
                 .one_or_none() #retorne um ou nenhum
-            }
+            )
             return data#[0] if data else None #retorna o primeiro elemento do resultado ou None se não encontrar
     
